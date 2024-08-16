@@ -1,0 +1,180 @@
+.my__card{
+    width: 100%;
+    height: 30vh;
+    background: url("../imgs/bg-main-mobile.png") no-repeat center;
+    background-size: cover;
+}
+
+.img__card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.card__front,
+.card__back{
+    position: relative;
+    width: 280px;
+    height: 20vh;
+    margin-right: -70px;
+    background: url("../imgs/bg-card-back.png") center no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    -webkit-filter: drop-shadow(0 3px 5px rgba(0,0,0,.3));
+    -moz-filter: drop-shadow(0 3px 5px rgba(0,0,0,.3));
+    -ms-filter: drop-shadow(0 3px 5px rgba(0,0,0,.3));
+    -o-filter: drop-shadow(0 3px 5px rgba(0,0,0,.3));
+    filter: drop-shadow(0 3px 5px rgba(0,0,0,.3));
+}
+
+.card__front{
+    top: -73px;
+    margin-right: 75px;
+    background: url('../imgs/bg-card-front.png') center no-repeat;
+    border-radius: 0.5rem;
+}
+
+.code span{
+    position: relative;
+    top: 68px;
+    left: 230px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--color-white);
+}
+
+.card__front{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.round__white{
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-white);
+    border-radius: 50px;
+}
+
+.round__borde__white{
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 1px solid var(--color-white);
+    border-radius: 50px;
+}
+
+.number__by__card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: flex-start;
+    color: var(--color-white);
+}
+
+.number__card{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.name__validity{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name__validity h3{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.date__validity{
+    font-size: 11px;
+}
+
+@media (width >= 768px){
+    .img__card{
+        padding-top: 8rem;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .card__back,
+    .card__front{
+        width: 350px;
+        height: 22vh;
+        margin-right: 0;
+        top: 0;
+    }
+    .code span{
+        top: 0px;
+        left: 0px;
+    }
+    .code{
+        width: 25px;
+        height: 100%;
+        margin-left: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media (width >= 1400px){
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .my__card{
+        width: 25%;
+        height: 100vh;
+        background: url("../imgs/bg-main-desktop.png") no-repeat center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img__card{
+        padding-top: 0px;
+        margin-left: 190px;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .card__back,
+    .card__front{
+        width: 430px;
+        height: 25vh;
+        margin-right: 0;
+        top: 0;
+        border-radius: 0.8rem;
+    }
+    .card__back{
+        margin-left: 100px;
+    }
+    .code{
+        width: 170px;
+    }
+}

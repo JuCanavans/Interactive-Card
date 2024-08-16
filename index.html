@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Interactive Card</title>
+</head>
+<body>
+    <main>
+        <div class="my__card">
+            <div class="img__card">
+                <div class="card__back">
+                    <div class="code">
+                        <span id="back-cvc">000</span>
+                    </div>
+                </div>
+
+                <div class="card__front">
+                    <div class="icon">
+                        <div class="round__white"></div>
+                        <div class="round__borde__white"></div>
+                    </div>
+                    
+                    <div class="number__by__card">
+                        <div class="number__card" id="my-number-card">0000 0000 0000 0000</div>
+                        <div class="name__validity">
+                            <h3 id="name-user">Jane Appleseed</h3>
+                            <div class="date__validity">
+                                <span id="month-user">00</span>/<span id="year-user">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card__registration">
+            <div class="infos">
+                <form action="infos-card">
+                    <div class="name">
+                        <label for="name">Cardholder Name</label>
+                        <input type="text" name="name" placeholder="e.g. Jane Appleseed">
+                    </div>
+                    <div class="name">
+                        <label for="number">Card Number</label>
+                        <input type="number" name="number" id="number-card" placeholder="e.g 1234 5678 9123 0000">
+                    </div>
+                    <div class="name__date__cvc">
+                        <div class="month">
+                            <label for="month">Exp. Date (MM/YY)</label>
+                            <div class="row__date">
+                                <input type="number" name="month" id="month-card" placeholder="MM">
+                                <input type="number" name="year" id="year-card" placeholder="YY">    
+                            </div>
+                        </div>
+                        <div class="cvc__card">
+                            <label for="check-code">Cvc</label>
+                            <input type="number" name="verification-code" id="check-code" placeholder="e.g. 123">
+                        </div>
+                    </div>
+                    <div class="button__decoration">
+                        <button id="submit">Confirm</button>
+                    </div>
+                </form>
+
+                <div class="sucess" id="sucess">
+                    <img src="./assets/imgs/icon-complete.svg" alt="Check">
+                    <div class="text">
+                        <h2>Thank you!</h2>
+                        <span>We've added you card details</span>
+                    </div>
+                    <div class="button__decoration">
+                        <button id="submit">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/"></script>
+</body>
+</html>

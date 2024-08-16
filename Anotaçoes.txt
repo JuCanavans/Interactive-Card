@@ -1,0 +1,3 @@
+Terminar de realizar as estilização do site, 
+e tambem começar a trabalhar o script da manipulação DOM,
+dados adiiconados do user para o icons de cartão. 

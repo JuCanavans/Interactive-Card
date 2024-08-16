@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+/*Imports styles*/
+@import url("../style/cards.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ft-primary: "Space Grotesk", sans-serif;
+    --color-red: hsl(0, 100%, 66%);
+    --color-white: hsl(0, 0%, 100%);
+    --light-violet: hsl(270, 3%, 87%);
+    --dark-violet: hsl(279, 6%, 55%);
+    --dark-violet-1: hsl(278, 68%, 11%);
+    --color-border: hsl(220, 78%, 61%);
+}
+
+body{
+    font-family: var(--ft-primary);
+    font-size: 18px;
+}
+
+.card__registration{
+    margin-top: 100px;
+    padding: 1rem;
+}
+
+.infos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    color: var(--dark-violet-1);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.name{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.name input{
+    position: relative;
+    height: 40px;
+    border: 1px solid var(--light-violet);
+    border-radius: 6px;
+    padding-left: 17px;
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--dark-violet-1);
+    outline: none;
+}
+
+.name input[type=number]:focus,
+.name input[type=text]:focus {
+    border: 2px solid var(--color-border);
+}
+
+.name__date__cvc{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.cvc__card,
+.month{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.month .row__date{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.cvc__card input,
+.row__date input{
+    width: 70px;
+    height: 40px;
+    border: 1px solid var(--light-violet);
+    border-radius: 6px;
+}
+
+.cvc__card input{
+    width: 100%;
+}
+
+.cvc__card input::placeholder,
+.name input::placeholder,
+.row__date input::placeholder{
+    font-family: var(--ft-primary);
+    font-weight: 500;
+    padding-left: 17px;
+    letter-spacing: 0.4px;
+    color: var(--light-violet);
+}
+
+.name input:focus{
+    border-color: 1px solid var(--dark-violet-1);
+}
+
+.button__decoration{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.button__decoration button{
+    font-family: var(--ft-primary);
+    width: 100%;
+    padding: 0.4rem;
+    background: var(--dark-violet-1);
+    border: none;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 31px;
+    color: var(--color-white);
+}
+
+/*Sucess*/
+
+.sucess{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.text{
+    font-family: var(--ft-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.text h2{
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--dark-violet-1);
+    text-transform: uppercase;
+}
+
+.text span{
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--dark-violet);
+}
+
+@media (width >= 768px){
+    form {
+        gap: 1.4rem;
+    }
+    .name__date__cvc{
+        justify-content: space-around;
+    }
+}
+
+@media (width >= 1400px){
+    .card__registration{
+        width: 100%;
+        margin-top: 0;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .name__date__cvc{
+        justify-content: space-between;
+    }
+    form{
+        width: 380px;
+    }
+}
